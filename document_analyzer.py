@@ -19,8 +19,8 @@ def CountAppearances(aWord, aText):
         if(word == aWord):
             count += 1
     return count
-
-solution = sorted(CountRepetitions(text).items(), key=lambda x: x[1], reverse=True)
+solution = sorted(CountRepetitions(text).items())
+solution = sorted(solution, key=lambda x: x[1], reverse=True)
 
 i = 0
 for key in solution:
