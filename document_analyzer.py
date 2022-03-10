@@ -22,6 +22,7 @@ def CountAppearances(aWord, aText):
 solution = sorted(CountRepetitions(text).items())
 solution = sorted(solution, key=lambda x: x[1], reverse=True)
 
+print('\r')
 i = 0
 for key in solution:
     print(key[0] + ": " + str(key[1]))
